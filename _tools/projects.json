@@ -1,0 +1,178 @@
+{
+  "projects": [
+    {
+      "slug": "relief-motion",
+      "title": "Relief Motion Physiotherapy",
+      "sector": "Healthcare",
+      "tagline": "A mark that turns an R and an M into a person in motion",
+      "short": "One identity carried from the reception wall to the staff ID badge, so the clinic looks as caring and professional as its care.",
+      "brief": "Relief Motion is a physiotherapy practice offering home visits and online consultations. It needed an identity that looked as caring and professional as the treatment itself, in a clinic, on a doorway and on a phone screen.",
+      "identity": "We joined an R and an M into a figure moving freely, in calm navy and healing teal. The mark then travels across wall signage, glass door vinyl, business cards, staff ID badges, letterhead and service graphics, so every touchpoint feels like the same practice.",
+      "services": ["Logo & identity", "Signage", "Print & stationery", "Social & campaign graphics"],
+      "deliverables": ["Logo and tagline lockup", "Reception wall signage", "Acrylic wall sign", "Glass door vinyl", "Business cards", "Staff ID badges", "Letterhead", "Service graphics"],
+      "palette": [["Navy", "#0B2E7A"], ["Teal", "#1B9F90"], ["Sky", "#3E6FD1"], ["Mist", "#E6F3F2"]],
+      "tone": "#E4EEF6",
+      "cover": 1,
+      "images": [
+        ["01", "Relief Motion Physiotherapy logo on a marble reception wall"],
+        ["02", "Relief Motion Physiotherapy business cards"],
+        ["03", "Relief Motion Physiotherapy staff ID badge and lanyard"],
+        ["04", "Relief Motion Physiotherapy letterhead"],
+        ["05", "Relief Motion Physiotherapy acrylic wall sign"],
+        ["06", "Relief Motion Physiotherapy glass door vinyl"],
+        ["07", "Relief Motion Physiotherapy service graphics"]
+      ]
+    },
+    {
+      "slug": "three-strands",
+      "title": "Three Strands Health & Wellness",
+      "sector": "Healthcare",
+      "tagline": "A mark that reads as a flowing strand and a face in profile",
+      "short": "One mark carried from reception signage to print and social, so the practice looks like itself everywhere.",
+      "brief": "Three Strands is a psychiatric and family nurse practice. Its identity had to feel calm, credible and personal before a patient reads a single word.",
+      "identity": "We drew a mark that reads as both a flowing strand and a face in profile, set in deep purple and gold. It then moves across office signage, a promotional flyer, social media posts and stationery so every touchpoint matches.",
+      "services": ["Logo & identity", "Signage", "Print & stationery", "Social & campaign graphics"],
+      "deliverables": ["Logo", "Reception signage", "Promotional flyer", "Social media post", "Stationery"],
+      "palette": [["Violet", "#5E2D8C"], ["Gold", "#D6A72F"], ["Plum", "#2B1646"], ["Lilac", "#EDE5F6"]],
+      "tone": "#EFE8F6",
+      "cover": 1,
+      "images": [
+        ["01", "Three Strands office reception signage featuring the brand mark"],
+        ["02", "Three Strands promotional flyer design"],
+        ["03", "Three Strands social media post design"],
+        ["04", "Three Strands logo printed on stationery"]
+      ]
+    },
+    {
+      "slug": "abiola-farms",
+      "title": "Abiola Farms",
+      "sector": "Agriculture",
+      "tagline": "Rooted in the land, built to read as modern and trustworthy",
+      "short": "A full visual system for an agricultural business: logo, signage, business cards, stickers and letterhead.",
+      "brief": "Abiola Farms needed a mark that felt trustworthy and modern while staying rooted in the land, and a system that makes the farm read as one consistent operation wherever it appears.",
+      "identity": "We built a badge logo that brings the livestock and the fields together, then carried it across entrance signage, business cards, stickers and letterhead.",
+      "services": ["Logo & identity", "Signage", "Print & stationery"],
+      "deliverables": ["Logo and badge", "Entrance signage", "Business cards", "Stickers", "Letterhead"],
+      "palette": [["Field", "#0B4A14"], ["Leaf", "#7FA34B"], ["Earth", "#8A4B1C"], ["Sun", "#F2C230"]],
+      "tone": "#E9EFDD",
+      "cover": 1,
+      "images": [
+        ["01", "Abiola Farms entrance signage featuring the brand mark"],
+        ["02", "Abiola Farms business card design"],
+        ["03", "Abiola Farms sticker design"],
+        ["04", "Abiola Farms letterhead design"]
+      ]
+    },
+    {
+      "slug": "shayan-private-equity",
+      "title": "Shayan Private Equity",
+      "sector": "Finance",
+      "tagline": "A restrained identity for a private equity house",
+      "short": "Logo, letterhead and business cards that give a fund management brand the weight of an established firm.",
+      "brief": "Shayan is a fund management and equity finance brand that needed to look established from day one, with trust and growth built into the first impression.",
+      "identity": "We drew a mark that reads as both an S and a rising chart, set in navy with a gold arrow. It sits on a restrained set of stationery: letterhead and business cards that feel like an established firm.",
+      "services": ["Logo & identity", "Print & stationery"],
+      "deliverables": ["Logo", "Letterhead", "Business cards"],
+      "palette": [["Navy", "#1F2F6B"], ["Gold", "#C58B1C"], ["Blue", "#3B7FD8"], ["Cloud", "#EEF2F8"]],
+      "tone": "#E6EAF3",
+      "cover": 1,
+      "images": [
+        ["01", "Shayan Private Equity logo mockup"],
+        ["02", "Shayan Private Equity letterhead mockup"],
+        ["03", "Shayan Private Equity business card mockup"],
+        ["04", "Shayan Private Equity flat logo"]
+      ]
+    },
+    {
+      "slug": "zavron",
+      "title": "Zavron Group",
+      "sector": "Trade & logistics",
+      "tagline": "Signage, stationery and packaging across the Zavron family",
+      "short": "A parent identity that holds together its sister brands across warehouse signage, glass walls and packaging.",
+      "brief": "Zavron is a trade and distribution business operating across Nigeria and Ghana. It needed one parent identity strong enough to sit beside its sister brands, Zavia and Zuria.",
+      "identity": "We built a Z mark of arrows in motion, with the line Connecting African Commerce, and carried it onto warehouse signage, office glass, packaging and business cards that also introduce the sister brands.",
+      "services": ["Logo & identity", "Signage", "Packaging", "Print & stationery"],
+      "deliverables": ["Logo", "Warehouse signage", "Glass office wall sign", "Business cards", "Packaging boxes"],
+      "palette": [["Navy", "#1C2A6B"], ["Green", "#2E9E4F"], ["Orange", "#F28A1F"], ["Kraft", "#D3A66B"]],
+      "tone": "#E7ECF4",
+      "cover": 1,
+      "images": [
+        ["01", "Zavron warehouse signage"],
+        ["02", "Zavron glass office wall sign"],
+        ["03", "Zavron business card featuring Zavia and Zuria"],
+        ["04", "Zavron packaging boxes"]
+      ]
+    },
+    {
+      "slug": "zavia-apparel",
+      "title": "Zavia Apparel",
+      "sector": "Fashion",
+      "tagline": "Monograms and metallics for a fashion label",
+      "short": "A ZA monogram worked into leather, bags, hardware and garment tags.",
+      "brief": "Zavia is a sister brand under the Zavron Group umbrella, a fashion label positioned at the top end of the market. The identity had to feel premium on a bag clasp as much as on a swing tag.",
+      "identity": "We designed a monogrammed ZA mark in deep maroon and gold, then carried it onto leather goods hardware, shopping bags, metal accessories and garment tags.",
+      "services": ["Logo & identity", "Packaging"],
+      "deliverables": ["ZA monogram", "Leather bag hardware", "Shopping bag", "Metal accessories", "Garment tags"],
+      "palette": [["Maroon", "#6E1A2C"], ["Gold", "#C9A04E"], ["Onyx", "#141212"], ["Kraft", "#D9BE96"]],
+      "tone": "#EFE6E4",
+      "cover": 1,
+      "images": [
+        ["01", "Zavia Apparel monogrammed leather bag"],
+        ["02", "Zavia Apparel black shopping bag"],
+        ["03", "Zavia Apparel metallic logo mockups on cufflinks and tie clip"],
+        ["04", "Zavia Apparel garment tags"]
+      ]
+    },
+    {
+      "slug": "zuria-cosmetics",
+      "title": "Zuria Cosmetics",
+      "sector": "Cosmetics",
+      "tagline": "Soft packaging and a campaign look for a cosmetics line",
+      "short": "A cosmetics identity from hero banner to jars, bags and perfume bottle.",
+      "brief": "Zuria is a skincare and cosmetics line, another sister brand under Zavron Group. It needed a clean, botanical identity that feels like clean luxury on a shelf and on a screen.",
+      "identity": "We built the identity around a lotus mark in forest green and soft gold, then carried it across product jars, shopping bags, a perfume bottle and a campaign banner.",
+      "services": ["Logo & identity", "Packaging", "Social & campaign graphics"],
+      "deliverables": ["Lotus mark", "Campaign banner", "Jar packaging", "Shopping bag", "Perfume bottle label"],
+      "palette": [["Forest", "#24402C"], ["Gold", "#C9A965"], ["Ivory", "#F1EBDD"], ["Clay", "#B9A58A"]],
+      "tone": "#ECEBE1",
+      "cover": 2,
+      "images": [
+        ["01", "Zuria Cosmetics hero banner concept"],
+        ["02", "Zuria Cosmetics product jars"],
+        ["03", "Zuria Cosmetics shopping bag concept"],
+        ["04", "Zuria Cosmetics perfume bottle"]
+      ]
+    }
+  ],
+  "services": [
+    {"name": "Logo design", "text": "A distinctive primary mark, with the colour, one-colour and compact versions a business actually needs.", "img": "three-strands/04", "link": "logos.html"},
+    {"name": "Brand identity", "text": "Logo, colour, type and usage rules that keep a brand consistent everywhere it appears.", "img": "zavron/02", "link": "work.html"},
+    {"name": "Print and stationery", "text": "Business cards, letterheads, ID badges, flyers and the other printed pieces a business hands out.", "img": "relief-motion/04", "link": "work.html"},
+    {"name": "Social media graphics", "text": "Post and campaign designs that carry the identity into the feed.", "img": "three-strands/03", "link": "work.html"},
+    {"name": "Signage", "text": "Reception walls, acrylic signs, glass vinyl and entrance boards, designed to read from across the room.", "img": "three-strands/01", "link": "work.html"},
+    {"name": "Packaging and labels", "text": "Boxes, bags, jars, tags and stickers that make the brand feel finished.", "img": "zuria-cosmetics/03", "link": "work.html"},
+    {"name": "Mockups and presentation", "text": "Realistic mockups, so you see the brand in place before anything is printed.", "img": "zavia-apparel/03", "link": "work.html"}
+  ],
+  "process": [
+    ["Listen", "We start with your business, your customers and the brands around you, so the work is built on the right brief."],
+    ["Explore", "We sketch routes for the mark and the look, and show you the strongest ideas with a clear reason behind each."],
+    ["Refine", "Together we sharpen one direction, then build out the colour, type and the pieces you need."],
+    ["Deliver", "You receive clean final files and the mockups, ready for print, signage and screen."]
+  ],
+  "logos": [
+    ["Abiola's Farm", "l01", "#ffffff"], ["Beautifyde", "l02", "#a0927d"], ["CareRush Pharmacy", "l03", "#ffffff"],
+    ["Elegance by Marz", "l04", "#ffffff"], ["Famous Property Consultant", "l05", "#f2f2f2"], ["Florieben Technology", "l06", "#656565"],
+    ["Fynamis Invest Solutions", "l07", "#ffffff"], ["GiftingMode", "l08", "#ffffff"], ["Monday Alade Foundation", "l09", "#c0b4c1"],
+    ["Moodsurf", "l10", "#ffffff"], ["Naija BreadHouse", "l11", "#ffffff"], ["Nature Renew", "l12", "#ffffff"],
+    ["Noniblaq", "l13", "#2e2d2b"], ["OBI Smooth-Tech", "l14", "#746c60"], ["SendX Logistics", "l15", "#ffffff"],
+    ["Shayan Private Equity", "l16", "#ffffff"], ["Soladet International Foundation", "l17", "#766e65"], ["Vee Threads & Co", "l18", "#d0ccbf"],
+    ["Youth Nation Media", "l19", "#ffffff"], ["Kelegan", "l20", "#ffffff"], ["IntelPRO Solutions", "l21", "#ffffff"],
+    ["YA Foundation", "l22", "#ffffff"], ["Three Strands Health & Wellness", "l23", "#ffffff"], ["Dealer Global Auto", "l24", "#ffffff"],
+    ["Relief Motion Physiotherapy", "l25", "#ffffff"]
+  ],
+  "wall": [
+    ["zavia-apparel/01", "relief-motion/01", "zuria-cosmetics/02", "shayan-private-equity/02"],
+    ["three-strands/01", "zavia-apparel/04", "zavron/01", "abiola-farms/03"],
+    ["relief-motion/03", "zuria-cosmetics/01", "zavia-apparel/02", "relief-motion/05"]
+  ]
+}
