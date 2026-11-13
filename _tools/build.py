@@ -59,6 +59,8 @@ ICONS = {
     "work": '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/>',
     "logos": '<circle cx="12" cy="12" r="9"/><path d="M12 3c3.2 3 3.2 15 0 18M12 3c-3.2 3-3.2 15 0 18M3 12h18"/>',
     "services": '<path d="M12 3l2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/>',
+    "resume": '<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>',
+    "download": '<path d="M12 4v11M7 11l5 5 5-5M5 20h14"/>',
     "contact": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
     "search": '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
     "sun": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
@@ -76,6 +78,7 @@ NAV = [
     ("work", "Work", "work.html", "identities"),
     ("logos", "Logos", "logos.html", "logos"),
     ("services", "Services", "index.html#services", "services"),
+    ("resume", "Resume", "resume.html", ""),
     ("contact", "Contact", "#contact", "contact"),
 ]
 
@@ -117,6 +120,7 @@ def footer(root):
           <li><a href="<<r>>work.html">Work</a></li>
           <li><a href="<<r>>logos.html">Logos</a></li>
           <li><a href="<<r>>index.html#services">Services</a></li>
+          <li><a href="<<r>>resume.html">Resume</a></li>
         </ul>
       </div>
       <div>
@@ -537,6 +541,121 @@ def logos():
     write("logos.html", h)
 
 
+RESUME_PDF = "assets/resume/Moses-Israel-Timilehin-Resume.pdf"
+R_EXP = [
+    ("Grey Creatives Studio", "Web &amp; Branding Studio", "Developer &amp; Lead Designer", "July 2026 – Present", [
+        "Lead client projects end to end, from brief and UI design through development, launch and revision rounds, delivering websites for IntelPRO Solutions, YA Foundation, Three Strands Health &amp; Wellness, Shayan Private Equity and Zavron Group.",
+        "Build custom features beyond static pages: a PHP and SQLite learning platform with Google sign-in and an admin dashboard, an email breach checker, an investment returns calculator, and news and job feeds that update themselves.",
+        "Set the studio's standards for responsive multi-page layouts, light and dark themes and page speed, and handle domain, hosting, email and Search Console setup so every site launches ready to be found."]),
+    ("Grey Creatives Design", "Branding and graphic design", "Brand Designer", "January 2024 – June 2026", [
+        "Developed 20+ complete brand identities, from logo suites and colour and typography systems to brand guideline documents and ready-to-use templates, applied consistently across print, signage, social media and web.",
+        "Designed the branded templates and collateral that keep a business consistent as it grows: letterheads, business cards, sticker labels, signage and social media post templates.",
+        "Delivered identities for Shayan Private Equity, Zavron Group (Zavia Apparel and Zuria Cosmetics), Three Strands Health &amp; Wellness, Abiola Farms, Relief Motion Physiotherapy and Dealer Global Auto."]),
+    ("Freelance", "Lagos, Nigeria", "Photographer, Designer &amp; Web Developer", "January 2024 – June 2026", [
+        "Design and develop websites for independent clients, managing brief, feedback rounds and handover directly with each one.",
+        "Shoot and edit studio, product, event and brand photography, and cut promotional videos in CapCut."]),
+]
+R_PROJ = [
+    ("Shayan Private Equity", "Investment platform and brand identity", "Web &amp; Brand Designer", "Figma, Illustrator, HTML, CSS, JavaScript, REST APIs, Supabase", "See the identity", "work/shayan-private-equity.html", [
+        "Designed and built the website for an investment and wealth-management firm: investment plans, a returns calculator, a multicurrency view (NGN, USD, GBP, EUR), a live market overview, training and loans pages, a chat assistant, and login and sign-up screens.",
+        "Created the full brand identity: logo, colour and typography system, brand guidelines, and templates for social media, presentations and investor communications."]),
+    ("Zavron Group", "Trade and distribution website, brand architecture", "Web &amp; Brand Designer", "Figma, Illustrator, HTML, CSS, JavaScript", "See the identity", "work/zavron.html", [
+        "Designed and built the website for a pan-African trade and distribution company, with its services, two consumer brands, offices in Lagos, Accra and Kigali, and a partnership request form with a confirmation flow.",
+        "Built the brand system behind the group and its two brands, Zavia Apparel and Zuria Cosmetics: logos, colour and type palettes, brand guidelines and social media templates that make them read as one family."]),
+    ("Three Strands Health &amp; Wellness", "Website and brand identity", "Web &amp; Brand Designer", "Illustrator, Photoshop, HTML, CSS, JavaScript", "See the identity", "work/three-strands.html", [
+        "Designed and built the website for a psychiatric and family nurse practice.",
+        "Developed the complete identity: logo, brand guidelines, signage, print stationery and social media templates, applied consistently across every patient touchpoint."]),
+    ("Abiola Farms and Relief Motion", "Brand identity systems", "Brand Designer", "Adobe Illustrator, Photoshop, CorelDRAW", "See Abiola Farms", "work/abiola-farms.html", [
+        "Abiola Farms: built a full identity system, with logo suite, colour and typography, letterhead, business card, farm-stand signage and sticker labels as one cohesive set, published as a Behance case study.",
+        "Relief Motion Physiotherapy: developed the logo and brand system with ready-to-use templates for a physiotherapy practice."]),
+    ("YA Foundation", "Website and learning platform", "Lead Developer &amp; Designer", "HTML, CSS, JavaScript, PHP, SQLite, Google OAuth, REST APIs", "yafoundationglobal.org", "https://yafoundationglobal.org", [
+        "Built a multi-page light and dark site for the Yemi Ademiluyi Foundation with programmes, events and team pages, a free data-breach checker and a 100 AI Tools directory.",
+        "Added a learning platform: student accounts with Google sign-in, three free courses (AI, Cyber Security, Data Privacy), an aptitude test, self-service certificates and an admin dashboard."]),
+    ("IntelPRO Solutions", "Cybersecurity company website", "Developer &amp; Designer", "HTML, CSS, JavaScript, REST APIs, SEO", "intelproglobal.com", "https://intelproglobal.com", [
+        "Designed a multi-page corporate site in the client's brand colours, with services, leadership profiles, certification credentials, a jobs board and a cyber news hub.",
+        "Built an on-site email breach checker, a news feed that curates and credits stories from their original sources, and job listings that update themselves and drop closed roles."]),
+]
+R_SKILLS = [
+    ("Design", "Figma, Illustrator, Photoshop, CorelDRAW, Canva, Brand Identity Systems"),
+    ("Video and photo", "Premiere Pro, CapCut, Photography"),
+    ("Languages and tools", "HTML, CSS, JavaScript, TypeScript, PHP, Python, SQL"),
+    ("Frontend and web", "React, Tailwind CSS, Responsive Design, Light/Dark Theming, SEO"),
+    ("Backend and data", "SQLite, MySQL, PostgreSQL, Supabase, Firebase"),
+    ("APIs and auth", "REST API Integration, Google OAuth"),
+    ("Tools and deployment", "Git, GitHub, VS Code, Vercel, cPanel, Google Search Console"),
+]
+
+
+def resume():
+    desc = "Resume of Moses Israel Timilehin, brand designer and software engineer behind Grey Creatives Design. Experience, projects, skills and education, with a PDF to download."
+    h = head("Resume | " + NAME, desc, "/resume", "", page="resume")
+    h += header("", "resume")
+    dl = ic(ICONS["download"])
+    exp = ""
+    for co, sub, role, when, bl in R_EXP:
+        exp += '<article class="rx"><div class="rx-when">%s</div><div class="rx-main"><h3>%s <span>%s</span></h3><p class="rx-role">%s</p><ul>%s</ul></div></article>' % (when, co, sub, role, "".join("<li>%s</li>" % b for b in bl))
+    proj = ""
+    for ti, kind, role, tools, label, href, bl in R_PROJ:
+        ext = href.startswith("http")
+        a = '<a class="link" href="%s"%s>%s %s</a>' % (href, ' target="_blank" rel="noopener"' if ext else "", label, ARROW)
+        proj += '<article class="rp"><div class="rp-h"><div><h3>%s</h3><p class="rp-k">%s</p></div>%s</div><p class="rp-r"><b>%s</b> &middot; %s</p><ul>%s</ul></article>' % (ti, kind, a, role, tools, "".join("<li>%s</li>" % b for b in bl))
+    skills = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (a, b) for a, b in R_SKILLS)
+    h += fill('''<main id="main">
+<section class="pg rs-hero"><div class="wrap rs-top">
+  <div>
+    <p class="pill"><i></i>Resume</p>
+    <h1>Moses Israel <em>Timilehin.</em></h1>
+    <p class="rs-role">Brand designer and software engineer</p>
+    <p class="lede">Takes a client from logo to launch: brand identity, interface and a fast, production-ready website. Has delivered 20+ complete brand identities and multiple client websites, and adds photography and video editing to every brand.</p>
+    <div class="cta-row"><a class="btn btn-ink" href="<<pdf>>" download>Download PDF <<dl>></a><a class="btn btn-line" href="<<wa>>" target="_blank" rel="noopener">Message on WhatsApp</a></div>
+  </div>
+  <aside class="rs-card" aria-label="Details">
+    <dl>
+      <div><dt>Based in</dt><dd>Lagos, Nigeria</dd></div>
+      <div><dt>Studios</dt><dd>Grey Creatives, Grey Creatives Design</dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:<<email>>"><<email>></a></dd></div>
+      <div><dt>Web studio</dt><dd><a href="<<studio>>" target="_blank" rel="noopener">greycreatives.vercel.app</a></dd></div>
+      <div><dt>Behance</dt><dd><a href="https://www.behance.net/greypixels" target="_blank" rel="noopener">behance.net/greypixels</a></dd></div>
+      <div><dt>GitHub</dt><dd><a href="https://github.com/Greycode-01" target="_blank" rel="noopener">github.com/Greycode-01</a></dd></div>
+    </dl>
+  </aside>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sh"><h2>Experience.</h2></div>
+  <div class="rx-list"><<exp>></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sh"><h2>Selected <em>projects.</em></h2><p>Brand identity work links to its full gallery on this site.</p></div>
+  <div class="rp-list"><<proj>></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap rs-cols">
+  <div>
+    <div class="sh"><h2>Skills.</h2></div>
+    <dl class="rs-skills"><<skills>></dl>
+  </div>
+  <div>
+    <div class="sh"><h2>Education.</h2></div>
+    <div class="rs-edu">
+      <div><b>BSc. Computer Science</b><span>Olabisi Onabanjo University, Ogun State</span><small>Graduated June 2026</small></div>
+      <div><b>ND, Science Laboratory Technology</b><span>The Polytechnic Ibadan, Oyo State</span><small>2022</small></div>
+    </div>
+    <div class="sh" style="margin-top:clamp(32px,5vw,56px)"><h2>Certifications.</h2></div>
+    <div class="rs-edu">
+      <div><b>Web Development &amp; IT</b><span>HIIT, Ikeja, Lagos</span><small>May – September 2025</small></div>
+      <div><b>Professional Photography Training</b><span>Authentic Studio, Alakuko, Lagos</span><small>2018 – 2020</small></div>
+    </div>
+  </div>
+</div></section>
+</main>
+''', pdf=RESUME_PDF, dl=dl, wa=WA_LINK, email=EMAIL, studio=STUDIO_URL, exp=exp, proj=proj, skills=skills)
+    h += cta_band("", "Hello Grey Creatives Design, I saw your resume and would like to talk.", "Let us work <em>together.</em>") + footer("")
+    h += tail("")
+    write("resume.html", h)
+
+
 def not_found():
     h = head("Page not found | " + NAME, "That page does not exist. Head back to Grey Creatives Design.", "/404", "", page="404")
     h += header("", "")
@@ -547,7 +666,7 @@ def not_found():
 
 
 def sitemap():
-    urls = ["/", "/work", "/logos"] + ["/work/" + p["slug"] for p in P]
+    urls = ["/", "/work", "/logos", "/resume"] + ["/work/" + p["slug"] for p in P]
     x = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join("  <url><loc>%s%s</loc></url>\n" % (SITE, u) for u in urls) + "</urlset>\n"
     write("sitemap.xml", x)
     write("robots.txt", "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE)
@@ -556,8 +675,8 @@ def sitemap():
 if __name__ == "__main__":
     make_thumbs()
     write_data()
-    home(); work(); logos(); not_found()
+    home(); work(); logos(); resume(); not_found()
     for i, p in enumerate(P):
         project(i, p)
     sitemap()
-    print("built", 5 + len(P), "pages")
+    print("built", 6 + len(P), "pages")

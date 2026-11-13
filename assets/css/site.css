@@ -509,3 +509,46 @@ textarea.fld{min-height:120px;resize:vertical}
   .band-track,.sticker svg.ring,.gl-ring.r2{animation:none!important}
 }
 #services{overflow-x:clip}
+
+/* ---------- resume page ---------- */
+.rs-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+.rs-hero h1{font-size:clamp(2.6rem,6vw,5.6rem);max-width:9em}
+.rs-hero h1 em{display:block}
+.rs-role{margin-top:18px;font:700 clamp(1.1rem,1.6vw,1.4rem) var(--ff-display);letter-spacing:-.02em;color:var(--gold-ink)}
+.rs-hero .cta-row{margin-top:30px}
+.rs-card{padding:clamp(20px,2.4vw,30px);border:1px solid var(--line);border-radius:22px;background:var(--surface)}
+.rs-card dl{display:grid;gap:0}
+.rs-card dl>div{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:13px 0;border-top:1px solid var(--line)}
+.rs-card dl>div:first-child{border-top:0;padding-top:0}
+.rs-card dl>div:last-child{padding-bottom:0}
+.rs-card dt{font:600 .82rem var(--ff-body);color:var(--ink-3);padding-top:2px}
+.rs-card dd{font-size:.9rem;color:var(--ink);overflow-wrap:break-word}
+.rs-card a,.rx a,.rs-edu a{text-underline-offset:3px}
+.rx-list,.rp-list{display:grid;gap:0;border-top:2px solid var(--ink)}
+.rx{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:clamp(16px,4vw,56px);padding:clamp(24px,3vw,38px) 0;border-bottom:1px solid var(--line)}
+.rx-when{font:600 .95rem var(--ff-body);color:var(--ink-2)}
+.rx h3{font-size:clamp(1.35rem,2vw,1.8rem)}
+.rx h3 span{font:500 .95rem var(--ff-body);letter-spacing:0;color:var(--ink-3);margin-left:8px}
+.rx-role{margin-top:4px;color:var(--gold-ink);font-weight:600}
+.rx ul,.rp ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;max-width:46em}
+.rx li,.rp li{position:relative;padding-left:20px;color:var(--ink-2);line-height:1.6}
+.rx li::before,.rp li::before{content:"";position:absolute;left:0;top:.68em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.rp{padding:clamp(24px,3vw,38px) 0;border-bottom:1px solid var(--line)}
+.rp-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px 32px;flex-wrap:wrap}
+.rp h3{font-size:clamp(1.35rem,2vw,1.8rem)}
+.rp-k{margin-top:4px;color:var(--ink-2)}
+.rp-r{margin-top:14px;font-size:.92rem;color:var(--ink-3)}
+.rp-r b{color:var(--ink);font-weight:600}
+.rs-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,6vw,80px);align-items:start}
+.rs-cols .sh{margin-bottom:clamp(20px,3vw,32px)}
+.rs-skills{display:grid;gap:0;border-top:2px solid var(--ink)}
+.rs-skills>div{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rs-skills dt{font:700 1rem var(--ff-body)}
+.rs-skills dd{color:var(--ink-2);font-size:.95rem;line-height:1.55}
+.rs-edu{display:grid;border-top:2px solid var(--ink)}
+.rs-edu>div{display:grid;gap:3px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rs-edu b{font-weight:700}
+.rs-edu span{color:var(--ink-2);font-size:.95rem}
+.rs-edu small{color:var(--ink-3);font-size:.85rem}
+@media (max-width:900px){ .rs-top{grid-template-columns:1fr;align-items:start} .rs-cols{grid-template-columns:1fr} }
+@media (max-width:640px){ .rx{grid-template-columns:1fr;gap:8px} .rs-card dl>div{grid-template-columns:76px minmax(0,1fr)} }

@@ -133,7 +133,7 @@ GC.openLogo = function(i){ LB.open(GC.logoItems(), i); };
   function slug(n){ return n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
   function build(){
     items = [];
-    [['Home', 'index.html', 'start top'], ['Work', 'work.html', 'projects brand identities case studies'], ['Logos', 'logos.html', 'logo design globe'], ['Services', 'index.html#services', 'what we design'], ['Contact', '#contact', 'email whatsapp hire quote']].forEach(function(p){
+    [['Home', 'index.html', 'start top'], ['Work', 'work.html', 'projects brand identities case studies'], ['Logos', 'logos.html', 'logo design globe'], ['Services', 'index.html#services', 'what we design'], ['Resume', 'resume.html', 'cv experience skills education about moses israel'], ['Contact', '#contact', 'email whatsapp hire quote']].forEach(function(p){
       items.push({ g:'Pages', icon:ic.page, label:p[0], kw:p[2], run:function(){ location.href = p[1].charAt(0) === '#' ? p[1] : ROOT + p[1]; } });
     });
     D.projects.forEach(function(p){ items.push({ g:'Brand identities', icon:'<img src="' + ROOT + p.thumb + '" alt="">', label:p.title, sub:p.sector, kw:p.slug + ' ' + p.tags.join(' '), run:function(){ location.href = ROOT + p.href; } }); });
@@ -141,6 +141,7 @@ GC.openLogo = function(i){ LB.open(GC.logoItems(), i); };
     items.push({ g:'Actions', icon:ic.act, label:'Switch light or dark theme', kw:'theme dark light mode', run:function(){ GC.toast(GC.toggleTheme() === 'dark' ? 'Dark mode' : 'Light mode'); } });
     items.push({ g:'Actions', icon:ic.act, label:'Copy email address', sub:D.email, kw:'mail contact copy', run:function(){ GC.copy(D.email, 'Email copied'); } });
     items.push({ g:'Actions', icon:ic.act, label:'Chat on WhatsApp', sub:D.phone, kw:'message whatsapp contact', run:function(){ window.open(D.waLink, '_blank', 'noopener'); } });
+    items.push({ g:'Actions', icon:ic.act, label:'Download resume (PDF)', sub:'Moses Israel Timilehin', kw:'cv resume download pdf', run:function(){ location.href = ROOT + 'assets/resume/Moses-Israel-Timilehin-Resume.pdf'; } });
     items.push({ g:'Actions', icon:ic.act, label:'Send an email', sub:D.email, kw:'mail contact', run:function(){ location.href = 'mailto:' + D.email; } });
   }
   function score(q, it){
